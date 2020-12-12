@@ -1,0 +1,2 @@
+mainarm_moveit_config:mainarmy8:marm_description:marm_gazebo:marm_moveit_config:marm_planning
+-DCATKIN_DEVEL_PREFIX=/home/lyw/marm/devel -DCMAKE_INSTALL_PREFIX=/home/lyw/marm/install -G Unix Makefiles

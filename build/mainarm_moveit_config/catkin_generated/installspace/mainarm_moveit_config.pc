@@ -1,0 +1,8 @@
+prefix=/home/lyw/marm/install
+
+Name: mainarm_moveit_config
+Description: Description of mainarm_moveit_config
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

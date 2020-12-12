@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: mainarmy8
+    relative_path: urdf/mainarmy8.urdf
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/mainarmy8.srdf
+  CONFIG:
+    author_name: Yunwei Li
+    author_email: 1084087910@qq.com
+    generated_timestamp: 1606493526

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="mainarmy8">
+
+      <joint name="bottom_joint" type="fixed">
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <parent link="base_link"/>
+        <child link="bottom_link"/>
+    </joint>
+    <link name="bottom_link">
+        <visual>
+              <origin xyz=" 0 0 -0.02"  rpy="0 0 0"/>
+                  <geometry>
+                       <box size="1 1 0.02" />
+                  </geometry>
+              
+        </visual>
+        <collision>
+            <origin xyz=" 0 0 -0.02"  rpy="0 0 0"/>
+            <geometry>
+                <box size="1 1 0.02" />
+            </geometry>
+        </collision>
+        
+    </link>
+
+
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.057303 -6.7869E-06 0.037387"
+        rpy="0 0 0" />
+      <mass
+        value="3.7046" />
+      <inertia
+        ixx="0.0082729"
+        ixy="4.7759E-07"
+        ixz="-4.5778E-08"
+        iyy="0.0043615"
+        iyz="8.1073E-09"
+        izz="0.011219" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mainarmy8/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mainarmy8/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="-0.0046086 -0.0028749 0.019352"
+        rpy="0 0 0" />
+      <mass
+        value="0.89018" />
+      <inertia
+        ixx="0.001332"
+        ixy="7.7642E-06"
+        ixz="3.003E-06"
+        iyy="0.0014537"
+        iyz="2.4942E-06"
+        izz="0.0025701" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mainarmy8/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 0.25" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mainarmy8/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="continuous">
+    <origin
+      xyz="0 0 0.1245"
+      rpy="0 0 1.6567" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="0.14733 0.00092603 -0.0065984"
+        rpy="0 0 0" />
+      <mass
+        value="0.51936" />
+      <inertia
+        ixx="0.00031341"
+        ixy="-3.9977E-05"
+        ixz="0.00028478"
+        iyy="0.0085796"
+        iyz="-3.1468E-05"
+        izz="0.0087995" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mainarmy8/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mainarmy8/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="0.0024908 -0.00021442 0.044"
+      rpy="1.5708 -1.3538 1.3422" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0.030631 -0.13892 0.98983" />
+    <limit
+      lower="-0.6"
+      upper="0.6"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="0.064746 -8.9541E-09 -0.00042155"
+        rpy="0 0 0" />
+      <mass
+        value="0.21135" />
+      <inertia
+        ixx="4.4368E-05"
+        ixy="2.4125E-10"
+        ixz="0.0001405"
+        iyy="0.0030915"
+        iyz="-1.6225E-11"
+        izz="0.0030988" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mainarmy8/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mainarmy8/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="0.33885 0.0059397 -0.042322"
+      rpy="3.0927 0.18568 -1.7043" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0.051432 0 0.99868" />
+    <limit
+      lower="0"
+      upper="1.4"
+      effort="0"
+      velocity="0" />
+  </joint>
+     <link name="grasping_frame"/>
+
+    <joint name="grasping_frame_joint" type="fixed">
+      <parent link="link3"/>
+      <child link="grasping_frame"/>
+      <origin xyz="0.29 0.0 -0.033" rpy="0 0 0"/>
+    </joint>
+</robot>
