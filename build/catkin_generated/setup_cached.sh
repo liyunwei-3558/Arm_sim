@@ -7,4 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PWD="/home/lyw/marm/build"
+export PWD='/home/lyw/Arm_sim/build'

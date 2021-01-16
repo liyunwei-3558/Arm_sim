@@ -31,14 +31,20 @@ class MoveItIkDemo:
         arm.allow_replanning(True)
         
         # 设置位置(单位：米)和姿态（单位：弧度）的允许误差
-        arm.set_goal_position_tolerance(0.01)
-        arm.set_goal_orientation_tolerance(0.05)
+        arm.set_goal_position_tolerance(0.1)
+        arm.set_goal_orientation_tolerance(0.1)
         
+        
+
         # 控制机械臂先回到初始化位置
-        arm.set_named_target('home')
+        arm.set_named_target('start1')
         arm.go()
         rospy.sleep(2)
-               
+        
+        arm.set_named_target('start2')
+        arm.go()
+        rospy.sleep(2)
+        
         # 设置机械臂工作空间中的目标位姿，位置使用x、y、z坐标描述，
         # 姿态使用四元数描述，基于base_link坐标系
         target_pose = PoseStamped()
@@ -47,10 +53,10 @@ class MoveItIkDemo:
         target_pose.pose.position.x = 0.191995
         target_pose.pose.position.y = 0.213868
         target_pose.pose.position.z = 0.520436
-        target_pose.pose.orientation.x = 0.911822
-        target_pose.pose.orientation.y = -0.0269758
-        target_pose.pose.orientation.z = 0.285694
-        target_pose.pose.orientation.w = -0.293653
+        target_pose.pose.orientation.x = 0
+        target_pose.pose.orientation.y = 0
+        target_pose.pose.orientation.z = 0
+        target_pose.pose.orientation.w = 0
         
         # 设置机器臂当前的状态作为运动初始状态
         arm.set_start_state_to_current_state()

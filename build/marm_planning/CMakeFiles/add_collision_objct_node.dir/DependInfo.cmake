@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/lyw/marm/src/marm_planning/src/add_collision_objct.cpp" "/home/lyw/marm/build/marm_planning/CMakeFiles/add_collision_objct_node.dir/src/add_collision_objct.cpp.o"
+  "/home/lyw/Arm_sim/src/marm_planning/src/add_collision_objct.cpp" "/home/lyw/Arm_sim/build/marm_planning/CMakeFiles/add_collision_objct_node.dir/src/add_collision_objct.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,9 +17,10 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/opt/ros/kinetic/include"
-  "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
-  "/opt/ros/kinetic/share/orocos_kdl/../../include"
+  "/home/lyw/Arm_sim/devel/include"
+  "/opt/ros/melodic/include"
+  "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
+  "/opt/ros/melodic/share/orocos_kdl/cmake/../../../include"
   "/usr/include/eigen3"
   )
 

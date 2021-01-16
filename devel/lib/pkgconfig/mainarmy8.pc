@@ -1,4 +1,4 @@
-prefix=/home/lyw/marm/devel
+prefix=/home/lyw/Arm_sim/devel
 
 Name: mainarmy8
 Description: Description of mainarmy8

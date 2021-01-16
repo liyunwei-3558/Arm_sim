@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/check_collision_node.dir/src/check_collision.cpp.o"
-  "/home/lyw/marm/devel/lib/marm_planning/check_collision_node.pdb"
-  "/home/lyw/marm/devel/lib/marm_planning/check_collision_node"
+  "/home/lyw/Arm_sim/devel/lib/marm_planning/check_collision_node.pdb"
+  "/home/lyw/Arm_sim/devel/lib/marm_planning/check_collision_node"
 )
 
 # Per-language clean rules from dependency scanning.

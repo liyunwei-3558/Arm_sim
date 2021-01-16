@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_random_node.dir/src/test_random.cpp.o"
-  "/home/lyw/marm/devel/lib/marm_planning/test_random_node.pdb"
-  "/home/lyw/marm/devel/lib/marm_planning/test_random_node"
+  "/home/lyw/Arm_sim/devel/lib/marm_planning/test_random_node.pdb"
+  "/home/lyw/Arm_sim/devel/lib/marm_planning/test_random_node"
 )
 
 # Per-language clean rules from dependency scanning.

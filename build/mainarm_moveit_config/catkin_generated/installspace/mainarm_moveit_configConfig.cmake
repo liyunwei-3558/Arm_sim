@@ -67,14 +67,14 @@ set(mainarm_moveit_config_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(mainarm_moveit_config_SOURCE_PREFIX /home/lyw/marm/src/mainarm_moveit_config)
-  set(mainarm_moveit_config_DEVEL_PREFIX /home/lyw/marm/devel)
+  set(mainarm_moveit_config_SOURCE_PREFIX /home/lyw/Arm_sim/src/mainarm_moveit_config)
+  set(mainarm_moveit_config_DEVEL_PREFIX /home/lyw/Arm_sim/devel)
   set(mainarm_moveit_config_INSTALL_PREFIX "")
   set(mainarm_moveit_config_PREFIX ${mainarm_moveit_config_DEVEL_PREFIX})
 else()
   set(mainarm_moveit_config_SOURCE_PREFIX "")
   set(mainarm_moveit_config_DEVEL_PREFIX "")
-  set(mainarm_moveit_config_INSTALL_PREFIX /home/lyw/marm/install)
+  set(mainarm_moveit_config_INSTALL_PREFIX /home/lyw/Arm_sim/install)
   set(mainarm_moveit_config_PREFIX ${mainarm_moveit_config_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/lyw/marm/install/lib;/home/lyw/marm/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/lyw/Arm_sim/install/lib;/home/lyw/Arm_sim/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

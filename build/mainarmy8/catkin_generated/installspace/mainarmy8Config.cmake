@@ -67,14 +67,14 @@ set(mainarmy8_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(mainarmy8_SOURCE_PREFIX /home/lyw/marm/src/mainarmy8)
-  set(mainarmy8_DEVEL_PREFIX /home/lyw/marm/devel)
+  set(mainarmy8_SOURCE_PREFIX /home/lyw/Arm_sim/src/mainarmy8)
+  set(mainarmy8_DEVEL_PREFIX /home/lyw/Arm_sim/devel)
   set(mainarmy8_INSTALL_PREFIX "")
   set(mainarmy8_PREFIX ${mainarmy8_DEVEL_PREFIX})
 else()
   set(mainarmy8_SOURCE_PREFIX "")
   set(mainarmy8_DEVEL_PREFIX "")
-  set(mainarmy8_INSTALL_PREFIX /home/lyw/marm/install)
+  set(mainarmy8_INSTALL_PREFIX /home/lyw/Arm_sim/install)
   set(mainarmy8_PREFIX ${mainarmy8_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/lyw/marm/install/lib;/home/lyw/marm/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/lyw/Arm_sim/install/lib;/home/lyw/Arm_sim/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -1,0 +1,8 @@
+prefix=/home/lyw/marm/install
+
+Name: mainarmy8
+Description: Description of mainarmy8
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

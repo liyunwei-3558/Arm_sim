@@ -14,5 +14,5 @@ int main(int argc, char **argv)
   group.setRandomTarget();
   // 开始运动规划，并且让机械臂移动到目标位置
   group.move();
-  ros::waitForShutdown();
+  ros::shutdown();
 }

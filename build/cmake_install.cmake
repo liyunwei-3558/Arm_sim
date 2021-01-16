@@ -1,8 +1,8 @@
-# Install script for directory: /home/lyw/marm/src
+# Install script for directory: /home/lyw/Arm_sim/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/lyw/marm/install")
+  set(CMAKE_INSTALL_PREFIX "/home/lyw/Arm_sim/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,7 +32,12 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   
       if (NOT EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}")
         file(MAKE_DIRECTORY "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}")
@@ -42,96 +47,98 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
       endif()
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/lyw/marm/install/_setup_util.py")
+   "/home/lyw/Arm_sim/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/lyw/marm/install" TYPE PROGRAM FILES "/home/lyw/marm/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/lyw/Arm_sim/install" TYPE PROGRAM FILES "/home/lyw/Arm_sim/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/lyw/marm/install/env.sh")
+   "/home/lyw/Arm_sim/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/lyw/marm/install" TYPE PROGRAM FILES "/home/lyw/marm/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/lyw/Arm_sim/install" TYPE PROGRAM FILES "/home/lyw/Arm_sim/build/catkin_generated/installspace/env.sh")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/lyw/marm/install/setup.bash;/home/lyw/marm/install/local_setup.bash")
+   "/home/lyw/Arm_sim/install/setup.bash;/home/lyw/Arm_sim/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/lyw/marm/install" TYPE FILE FILES
-    "/home/lyw/marm/build/catkin_generated/installspace/setup.bash"
-    "/home/lyw/marm/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/lyw/Arm_sim/install" TYPE FILE FILES
+    "/home/lyw/Arm_sim/build/catkin_generated/installspace/setup.bash"
+    "/home/lyw/Arm_sim/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/lyw/marm/install/setup.sh;/home/lyw/marm/install/local_setup.sh")
+   "/home/lyw/Arm_sim/install/setup.sh;/home/lyw/Arm_sim/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/lyw/marm/install" TYPE FILE FILES
-    "/home/lyw/marm/build/catkin_generated/installspace/setup.sh"
-    "/home/lyw/marm/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/lyw/Arm_sim/install" TYPE FILE FILES
+    "/home/lyw/Arm_sim/build/catkin_generated/installspace/setup.sh"
+    "/home/lyw/Arm_sim/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/lyw/marm/install/setup.zsh;/home/lyw/marm/install/local_setup.zsh")
+   "/home/lyw/Arm_sim/install/setup.zsh;/home/lyw/Arm_sim/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/lyw/marm/install" TYPE FILE FILES
-    "/home/lyw/marm/build/catkin_generated/installspace/setup.zsh"
-    "/home/lyw/marm/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/lyw/Arm_sim/install" TYPE FILE FILES
+    "/home/lyw/Arm_sim/build/catkin_generated/installspace/setup.zsh"
+    "/home/lyw/Arm_sim/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/lyw/marm/install/.rosinstall")
+   "/home/lyw/Arm_sim/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/lyw/marm/install" TYPE FILE FILES "/home/lyw/marm/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/lyw/Arm_sim/install" TYPE FILE FILES "/home/lyw/Arm_sim/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/lyw/marm/build/gtest/cmake_install.cmake")
-  include("/home/lyw/marm/build/marm_planning/cmake_install.cmake")
-  include("/home/lyw/marm/build/marm_gazebo/cmake_install.cmake")
-  include("/home/lyw/marm/build/mainarmy8/cmake_install.cmake")
-  include("/home/lyw/marm/build/mainarm_moveit_config/cmake_install.cmake")
-  include("/home/lyw/marm/build/marm_description/cmake_install.cmake")
-  include("/home/lyw/marm/build/marm_moveit_config/cmake_install.cmake")
+  include("/home/lyw/Arm_sim/build/gtest/cmake_install.cmake")
+  include("/home/lyw/Arm_sim/build/household_objects_database_msgs/cmake_install.cmake")
+  include("/home/lyw/Arm_sim/build/manipulation_msgs/cmake_install.cmake")
+  include("/home/lyw/Arm_sim/build/marm_planning/cmake_install.cmake")
+  include("/home/lyw/Arm_sim/build/marm_gazebo/cmake_install.cmake")
+  include("/home/lyw/Arm_sim/build/mainarmy8/cmake_install.cmake")
+  include("/home/lyw/Arm_sim/build/mainarm_moveit_config/cmake_install.cmake")
+  include("/home/lyw/Arm_sim/build/marm_description/cmake_install.cmake")
+  include("/home/lyw/Arm_sim/build/marm_moveit_config/cmake_install.cmake")
 
 endif()
 
@@ -143,5 +150,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/lyw/marm/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/lyw/Arm_sim/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

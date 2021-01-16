@@ -3,7 +3,7 @@
 #include <moveit/planning_scene_interface/planning_scene_interface.h>
 #include <moveit_msgs/AttachedCollisionObject.h>
 #include <moveit_msgs/CollisionObject.h>
-
+#include <std_msgs/String.h>
 int main(int argc, char **argv)
 {
     ros::init(argc, argv, "add_collision_objct");
@@ -17,6 +17,7 @@ int main(int argc, char **argv)
 
     // 声明一个障碍物的实例，并且为其设置一个id，方便对其进行操作，该实例会发布到当前的情景实例中
     moveit_msgs::CollisionObject cylinder;
+    cylinder.header.frame_id = "base_link";
     cylinder.id = "arm_cylinder";
 
     // 设置障碍物的外形、尺寸等属性   
@@ -44,7 +45,10 @@ int main(int argc, char **argv)
 
     // 所有障碍物加入列表后（这里只有一个障碍物），再把障碍物加入到当前的情景中，如果要删除障碍物，使用removeCollisionObjects(collision_objects)
     current_scene.addCollisionObjects(collision_objects);
-
+  //  auto kk = moveit::planning_interface::PlanningSceneInterface::getKnownObjectNames(false);
+    //std::vector<std::string> kk = current_scene.getKnownObjectNames(0);
+  //  std::cout<<kk.front()<<std::endl;
+    ROS_INFO("Completed.\n");
     ros::shutdown();
 
     return 0;

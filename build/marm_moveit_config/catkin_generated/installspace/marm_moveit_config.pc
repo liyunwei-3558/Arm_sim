@@ -1,4 +1,4 @@
-prefix=/home/lyw/marm/install
+prefix=/home/lyw/Arm_sim/install
 
 Name: marm_moveit_config
 Description: Description of marm_moveit_config

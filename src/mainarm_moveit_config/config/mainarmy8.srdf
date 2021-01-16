@@ -29,6 +29,57 @@
         <joint name="joint2" value="-0.3297" />
         <joint name="joint3" value="0.5538" />
     </group_state>
+    <group_state name="start1" group="arm">
+        <joint name="joint1" value="1.0516499" />
+        <joint name="joint2" value="-0.5059" />
+        <joint name="joint3" value="0.1047" />
+    </group_state>
+    <group_state name="start2" group="arm">
+        <joint name="joint1" value="1.2924966" />
+        <joint name="joint2" value="-0.5059" />
+        <joint name="joint3" value="0.1047" />
+    </group_state>
+    <group_state name="start3" group="arm">
+        <joint name="joint1" value="1.5707" />
+        <joint name="joint2" value="-0.5059" />
+        <joint name="joint3" value="0.1047" />
+    </group_state>
+    <group_state name="start4" group="arm">
+        <joint name="joint1" value="2.6224" />
+        <joint name="joint2" value="-0.5059" />
+        <joint name="joint3" value="0.1047" />
+    </group_state>
+    <group_state name="start5" group="arm">
+        <joint name="joint1" value="2.8633" />
+        <joint name="joint2" value="-0.5059" />
+        <joint name="joint3" value="0.1047" />
+    </group_state>
+
+    <group_state name="goal1" group="arm">
+        <joint name="joint1" value="-1.0516499" />
+        <joint name="joint2" value="-0.5059" />
+        <joint name="joint3" value="0.1047" />
+    </group_state>
+    <group_state name="goal2" group="arm">
+        <joint name="joint1" value="-1.2924966" />
+        <joint name="joint2" value="-0.5059" />
+        <joint name="joint3" value="0.1047" />
+    </group_state>
+    <group_state name="goal3" group="arm">
+        <joint name="joint1" value="-1.5707" />
+        <joint name="joint2" value="-0.5059" />
+        <joint name="joint3" value="0.1047" />
+    </group_state>
+    <group_state name="goal4" group="arm">
+        <joint name="joint1" value="-2.6224" />
+        <joint name="joint2" value="-0.5059" />
+        <joint name="joint3" value="0.1047" />
+    </group_state>
+    <group_state name="goal5" group="arm">
+        <joint name="joint1" value="-2.8633" />
+        <joint name="joint2" value="-0.5059" />
+        <joint name="joint3" value="0.1047" />
+    </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="gripper" parent_link="grasping_frame" group="gripper" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
